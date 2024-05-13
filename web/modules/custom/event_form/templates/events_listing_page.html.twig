@@ -1,0 +1,28 @@
+<h2>Events Listing</h2>
+
+    {% if events %}
+      <table>
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Event Place</th>
+            <th>Event Date</th>
+            <th>Added By</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for event in events %}
+            <tr>
+              <td>{{ event.name }}</td>
+              <td>{{ event.place }}</td>
+              <td>{{ event.date|date('Y-m-d') }}</td>
+              <td>{{ event.added_by }}</td>
+
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No events found.</p>
+    {% endif %}

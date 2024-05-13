@@ -1,0 +1,14 @@
+uuid: 9e09b01e-5158-449c-95f8-eb8751d8d438
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - hitesh.techwork@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

@@ -1,0 +1,5 @@
+name: Event Form
+type: module
+description: "Provides a custom form for submitting event details."
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,19 @@
+<?php
+
+
+
+
+/**
+ * Implements hook_theme().
+ */
+function event_form_theme($existing, $type, $theme, $path)
+{
+    return [
+        'events_listing_page' => [
+            'variables' => [
+                'events' => [],
+            ],
+            'template' => 'events_listing_page',
+        ],
+    ];
+}

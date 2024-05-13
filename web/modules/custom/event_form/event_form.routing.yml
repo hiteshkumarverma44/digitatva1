@@ -1,0 +1,14 @@
+event_form.event_form:
+  path: "/event-form"
+  defaults:
+    _form: 'Drupal\event_form\Form\EventForm'
+    _title: "Event Form"
+  requirements:
+    _permission: "access content"
+
+event_form.events_listing:
+  path: "/events-listing"
+  defaults:
+    _controller: '\Drupal\event_form\Controller\EventsListingController::listing'
+  requirements:
+    _permission: "access content"

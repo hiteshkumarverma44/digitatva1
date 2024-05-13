@@ -1,0 +1,29 @@
+uuid: fca86428-927f-427b-8d52-0b0e9f572f86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_added_by
+    - node.type.events
+id: node.events.field_event_added_by
+field_name: field_event_added_by
+entity_type: node
+bundle: events
+label: 'Event Added By'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference
